@@ -54,6 +54,7 @@ flower_project/
 ├── predict.py                     # 根目录推理脚本（与 code/predict.py 相同）
 │
 └── submission_skeleton/           # 提交模板目录（用于评测平台提交）
+
     └── code/
         ├── model.py               # 模型定义
         
