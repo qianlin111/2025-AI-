@@ -22,34 +22,53 @@ flower_project/
 │   ├── train.py                   # 5 折交叉验证训练脚本（含 Temperature Scaling 校准）
 
 │   ├── predict.py                 # 推理脚本（多模型 Logit 平均，输出 CSV）
+
 │   ├── utils.py                   # 工具函数（随机种子、数据增强/预处理）
+
 │   └── requirements.txt           # Python 依赖列表
 │
 ├── model/                         # 模型权重及配置
+
 │   ├── best_model_fold0.pth       # 第 0 折最优模型权重
+
 │   ├── best_model_fold1.pth       # 第 1 折最优模型权重
+
 │   ├── best_model_fold2.pth       # 第 2 折最优模型权重
+
 │   ├── best_model_fold3.pth       # 第 3 折最优模型权重
+
 │   ├── best_model_fold4.pth       # 第 4 折最优模型权重
+
 │   └── config.json                # 模型配置（模型名、类别数、输入尺寸、温度等）
 │
 ├── train_dataset/                 # 训练图片目录（约 10,000+ 张 .jpg 图片）
+
 ├── test/                          # 测试图片目录
+
 ├── train_labels.csv               # 训练标签文件（filename, category_id, chinese_name, english_name）
+
 ├── results/
 │   └── submission.csv             # 推理结果输出（filename, category_id, confidence）
+
 │
 ├── predict.py                     # 根目录推理脚本（与 code/predict.py 相同）
 │
 └── submission_skeleton/           # 提交模板目录（用于评测平台提交）
     └── code/
         ├── model.py               # 模型定义
+        
         ├── predict.py             # 推理脚本
+        
         ├── train.py               # 训练脚本
+        
         ├── train_kfold.py         # 5 折训练脚本（convnext_tiny 版本）
+        
         ├── split_local_test.py    # 本地数据集划分工具（按类别分层抽样）
+        
         ├── utils.py               # 工具函数
+        
         ├── requirements.txt       # 依赖列表
+        
         └── model/                 # 模型权重及配置（与上级 model/ 相同）
 
 
