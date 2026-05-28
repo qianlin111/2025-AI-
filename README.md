@@ -18,7 +18,9 @@ flower_project/
 ├── code/                          # 核心代码目录
 
 │   ├── model.py                   # 模型定义（基于 timm 创建模型，支持本地权重加载）
+
 │   ├── train.py                   # 5 折交叉验证训练脚本（含 Temperature Scaling 校准）
+
 │   ├── predict.py                 # 推理脚本（多模型 Logit 平均，输出 CSV）
 │   ├── utils.py                   # 工具函数（随机种子、数据增强/预处理）
 │   └── requirements.txt           # Python 依赖列表
